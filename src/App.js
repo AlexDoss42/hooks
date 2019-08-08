@@ -5,13 +5,14 @@ function App() {
 
   const [message, setMessage] = useState('')
   const [deathStar, setDeathStar] = useState(true)
+  const [countDown, setCountDown] = useState(5)
 
   useEffect(() => {
     setMessage('Use the force Luke')
   }, [])
 
   useEffect(() => {
-    fetch('')
+    setCountDown(countDown - 1)
   }, [message])
 
 
@@ -27,6 +28,8 @@ function App() {
          <button onClick = {() => {setMessage("YOU'RE ALL CLEAR KID!!!")}}>Deus Ex Machina</button>
          <button onClick = {() => {setDeathStar(false)}}>Fire the Missiles</button>
         </div>
+
+      <h3>{countDown}</h3>
       </div>
     );
   } else {
