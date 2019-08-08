@@ -40,3 +40,16 @@ h1, h3 {
   color: #f9d71c;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
+input {
+  height: 50px;
+  width: 400px;
+  font-size: 40px;
+  background: black;
+  color: #f9d71c;
+  border-color: #f9d71c;
+  border-width: 5px;
+  border-radius: 25px;
+  margin: 50px;
+  text-align: center;
+}

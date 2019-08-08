@@ -6,6 +6,7 @@ function App() {
   const [message, setMessage] = useState('')
   const [deathStar, setDeathStar] = useState(true)
   const [countDown, setCountDown] = useState(5)
+  // const [inputValue, setInputValue] = useState('')
 
 
   useEffect(() => {
@@ -23,6 +24,9 @@ function App() {
       <div className="App">
        <h1>{message}</h1>
 
+       {/* <h3>{inputValue}</h3> */}
+  
+       {/* <input placeholder='Who said that?' value={inputValue} onChange={e =>setInputValue(e.target.value)} /> */}
   
        <div>
          <button onClick = {() => {setMessage('Luke your targeting computer is off')}}>Use the Force</button>
