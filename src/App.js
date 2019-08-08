@@ -7,12 +7,19 @@ function App() {
   const [deathStar, setDeathStar] = useState(true)
   const [countDown, setCountDown] = useState(5)
 
+
   useEffect(() => {
-    setMessage('Use the force Luke')
+    setMessage('Use The Force Luke')
+    
   }, [])
+
+
 
   useEffect(() => {
     setCountDown(countDown - 1)
+    return () => {
+      console.log('cleaning up')
+    } 
   }, [message])
 
 
