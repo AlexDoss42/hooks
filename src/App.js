@@ -10,16 +10,11 @@ function App() {
 
   useEffect(() => {
     setMessage('Use The Force Luke')
-    
   }, [])
-
-
+ 
 
   useEffect(() => {
     setCountDown(countDown - 1)
-    return () => {
-      console.log('cleaning up')
-    } 
   }, [message])
 
 

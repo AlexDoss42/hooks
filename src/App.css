@@ -13,6 +13,27 @@
   color: white;
 }
 
+body {
+  background: black;
+}
+
 img {
   width: 100vw;
+  height: 100vh;
+}
+
+button {
+  color: #f9d71c;
+  border-color: #f9d71c;
+  height: 100px;
+  width: 400px;
+  border-radius: 5px;
+  margin: 0 20px;
+  background: black;
+  font-size: 50px
+}
+
+h1, h3 {
+  font-size: 100px;
+  color: #f9d71c
 }
